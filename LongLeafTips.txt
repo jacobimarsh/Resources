@@ -1,0 +1,9 @@
+Here are some Longleaf specific tips:
+
+>>changing permissions:
+In the project space everytime you create a new file/directory, only you have permissions to write and execute. To allow others in our group to access it, please use:
+
+chmod -R g+rwX <directory-to-be-modified>/
+chmod g+rwX <file-to-be-modified>/
+
+This will provide only users in johrilab access to these files.  
