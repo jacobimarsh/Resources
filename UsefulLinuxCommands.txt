@@ -1,0 +1,16 @@
+Quick cheat sheet to find some commonly used linux commands:
+
+#compress files/folders\
+>> folder="name_of_folder"
+>> zip -r ${folder}.zip ${folder}
+>> tar -zcvf ${folder}.tar.gz ${folder}
+
+#decompress files/folder\
+>> unzip ${folder}.zip
+>> tar -zxvf ${folder}.tar.gz
+
+#To list only directories in a folder:
+>> ls -d */
+
+#To get size of directory
+>> du -sh >directory>/
