@@ -1,0 +1,16 @@
+Ways to transfer files:
+
+1. Rsync
+#transfer folder from remote to local
+>> rsync -rtv username@longleaf.unc.edu:/path/<directory> /path/to/local/directory/
+>> rsync -tv username@longleaf.unc.edu:/path/filename /path/to/local/directory/
+
+#transfer folder from local to remote
+>> rsync -rtv /path/to/local/<directory> username@longleaf.unc.edu:/path/in/cluster
+>> rsync -tv /path/to/local/filename username@longleaf.unc.edu:/path/in/cluster/
+
+2. SCP
+#transfer folder from remote to local
+>> scp -r username@longleaf.unc.edu:/path/<directory> /path/to/local/directory/
+>> scp username@longleaf.unc.edu:/path/filename /path/to/local/directory/
+>> scp 'username@longleaf.unc.edu:/path/*' /path/to/local/directory/
