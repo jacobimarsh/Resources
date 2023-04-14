@@ -7,3 +7,8 @@ chmod -R g+rwX <directory-to-be-modified>/
 chmod g+rwX <file-to-be-modified>/
 
 This will provide only users in johrilab access to these files.  
+
+>>start an interactive job in the terminal:
+srun -t 5:00:00 -p interact -N 1 -n 1 --pty /bin/bash
+
+
